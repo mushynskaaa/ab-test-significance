@@ -2,8 +2,6 @@
 
 The project calculates the statistical significance of key funnel metrics for multiple A/B tests using a two-proportional z-test in a generalized manner (for any number of metrics and dimensions) and visualizes the results in Tableau.
 
----
-
 ## About the Project
 
 Calculating significance using online calculators isn't always convenient, and it's also difficult to scale. That's why the project is based on my replacement of this method with a Python script that:
@@ -14,8 +12,6 @@ Calculating significance using online calculators isn't always convenient, and i
 
 Statistical significance without taking sample size into account can be misleading when certain segments show extreme percentage changes with a p-value < 0.05 but do not hold up to scrutiny based on the volume of data. Therefore, the result should always be considered in conjunction with the sample size.
 
----
-
 ##  Data
 
 The data is retrieved from BigQuery using an SQL query and exported to CSV:
@@ -24,8 +20,6 @@ The data is retrieved from BigQuery using an SQL query and exported to CSV:
 | `test`, `test_group` | A/B test number and group (1 = control, 2 = test) |
 | `event_name`, `value` | event name and quantity |
 | `date`, `country`, `device`, `continent`, `channel` | dimensions for cross-sections |
-
----
 
 ## Stack
 
@@ -36,14 +30,10 @@ The data is retrieved from BigQuery using an SQL query and exported to CSV:
 | Environment | Google Colab |
 | Visualization | Tableau Public |
 
----
-
 ## Dashboard
 
 The interactive Tableau dashboard displays four metrics, indicating which ones are significant and which are not (color-coded), with a filter by test number:
 [Link to Dasboard](https://public.tableau.com/views/ABtestdashboard_17889006779050/ABtest?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
-
----
 
 ## Get in touch
 
