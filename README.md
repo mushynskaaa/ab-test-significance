@@ -1,6 +1,6 @@
 # A/B Test Significance Toolkit
-
-The project calculates the statistical significance of key funnel metrics for multiple A/B tests using a two-proportional z-test—in a generalized manner (for any number of metrics and dimensions) and visualizes the results in Tableau.
+---
+The project calculates the statistical significance of key funnel metrics for multiple A/B tests using a two-proportional z-test in a generalized manner (for any number of metrics and dimensions) and visualizes the results in Tableau.
 ---
 ## About the Project
 Calculating significance using online calculators isn't always convenient, and it's also difficult to scale. That's why the project is based on my replacement of this method with a Python script that:
