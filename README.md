@@ -1,6 +1,6 @@
 # A/B Test Significance Toolkit
 
-#### The project calculates the statistical significance of key funnel metrics for multiple A/B tests using a two-proportional z-test in a generalized manner (for any number of metrics and dimensions) and visualizes the results in Tableau.
+The project calculates the statistical significance of key funnel metrics for multiple A/B tests using a two-proportional z-test in a generalized manner (for any number of metrics and dimensions) and visualizes the results in Tableau.
 
 ---
 
@@ -12,7 +12,7 @@ Calculating significance using online calculators isn't always convenient, and i
 - counts both the total for the test and the breakdowns (devices, continents, countries);
 - outputs a ready-to-use CSV file for visualization.
 
-#### Statistical significance without taking sample size into account can be misleading when certain segments show extreme percentage changes with a p-value < 0.05 but do not hold up to scrutiny based on the volume of data. Therefore, the result should always be considered in conjunction with the sample size.
+Statistical significance without taking sample size into account can be misleading when certain segments show extreme percentage changes with a p-value < 0.05 but do not hold up to scrutiny based on the volume of data. Therefore, the result should always be considered in conjunction with the sample size.
 
 ---
 
@@ -40,8 +40,8 @@ The data is retrieved from BigQuery using an SQL query and exported to CSV:
 
 ## Dashboard
 
-#### The interactive Tableau dashboard displays four metrics, indicating which ones are significant and which are not (color-coded), with a filter by test number:
-#### [Link to Dasboard](https://public.tableau.com/views/ABtestdashboard_17889006779050/ABtest?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+The interactive Tableau dashboard displays four metrics, indicating which ones are significant and which are not (color-coded), with a filter by test number:
+[Link to Dasboard](https://public.tableau.com/views/ABtestdashboard_17889006779050/ABtest?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ---
 
